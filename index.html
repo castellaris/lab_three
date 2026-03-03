@@ -19,17 +19,20 @@
                 <b>dir</b> (CMD) / <b>Get-ChildItem</b> (PowerShell)<br>
                 Показывает список файлов и папок.<br>
                 <img src="dir_example.png" alt="Вывод команды dir в CMD" class="screenshot">
-                <p class="caption">Рисунок 1 — вывод команды dir в CMD</p>
+                <p class="caption">Рисунок 1 — команда <code>dir</code> выводит список файлов и папок в текущем каталоге. В таблице отображаются дата изменения, атрибуты и размер файлов, что помогает администратору быстро оценить структуру каталога.</p>
+
                 <img src="getchilditem_example.png" alt="Вывод команды Get-ChildItem в PowerShell" class="screenshot">
-                <p class="caption">Рисунок 2 — вывод команды Get-ChildItem в PowerShell</p>
+                <p class="caption">Рисунок 2 — команда <code>Get-ChildItem</code> в PowerShell показывает содержимое каталога в структурированном виде: режим доступа, дата изменения, размер и имя. Такой формат удобен для фильтрации и автоматизации.</p>
             </div>
+
             <div class="example">
                 <b>cd</b> (CMD) / <b>Set-Location</b> (PowerShell)<br>
                 Переход в другой каталог.<br>
                 <img src="cd_example.png" alt="Пример перехода в каталог через cd" class="screenshot">
-                <p class="caption">Рисунок 3 — переход в каталог через cd</p>
+                <p class="caption">Рисунок 3 — команда <code>cd</code> изменила рабочую директорию на <code>C:\Users\Student\Pictures\Screenshots</code>. Приглашение командной строки обновилось, подтверждая успешный переход.</p>
+
                 <img src="setlocation_example.png" alt="Пример перехода в каталог через Set-Location" class="screenshot">
-                <p class="caption">Рисунок 4 — переход в каталог через Set-Location</p>
+                <p class="caption">Рисунок 4 — команда <code>Set-Location</code> в PowerShell выполняет аналогичный переход. После выполнения приглашение оболочки показывает новый путь.</p>
             </div>
         </div>
 
@@ -39,13 +42,14 @@
                 <b>net user</b> (CMD)<br>
                 Управление учетными записями.<br>
                 <img src="netuser_example.png" alt="Пример добавления пользователя через net user" class="screenshot">
-                <p class="caption">Рисунок 5 — добавление пользователя через net user</p>
+                <p class="caption">Рисунок 5 — команда <code>net user</code> создаёт нового пользователя с заданным именем и паролем. Это используется администраторами для управления локальными учётными записями.</p>
             </div>
+
             <div class="example">
                 <b>Get-LocalUser</b> (PowerShell)<br>
                 Просмотр локальных пользователей.<br>
                 <img src="getlocaluser_example.png" alt="Вывод списка пользователей через Get-LocalUser" class="screenshot">
-                <p class="caption">Рисунок 6 — список пользователей через Get-LocalUser</p>
+                <p class="caption">Рисунок 6 — команда <code>Get-LocalUser</code> выводит список локальных пользователей, их статус (включены/отключены) и описание. Это позволяет быстро проверить активные учётные записи.</p>
             </div>
         </div>
 
@@ -55,19 +59,21 @@
                 <b>tasklist</b> (CMD)<br>
                 Список запущенных процессов.<br>
                 <img src="tasklist_example.png" alt="Вывод списка процессов через tasklist" class="screenshot">
-                <p class="caption">Рисунок 7 — список процессов через tasklist</p>
+                <p class="caption">Рисунок 7 — команда <code>tasklist</code> показывает список всех запущенных процессов: имя, PID, сессия и объём памяти. Это помогает отслеживать активные приложения и службы.</p>
             </div>
+
             <div class="example">
                 <b>taskkill</b> (CMD)<br>
                 Завершение процесса.<br>
                 <img src="taskkill_example.png" alt="Пример завершения процесса через taskkill" class="screenshot">
-                <p class="caption">Рисунок 8 — завершение процесса через taskkill</p>
+                <p class="caption">Рисунок 8 — команда <code>taskkill</code> завершает процесс по его PID. В выводе подтверждается успешное завершение, что полезно для принудительного закрытия зависших приложений.</p>
             </div>
+
             <div class="example">
                 <b>Get-Process</b> (PowerShell)<br>
                 Просмотр процессов.<br>
                 <img src="getprocess_example.png" alt="Вывод процессов через Get-Process" class="screenshot">
-                <p class="caption">Рисунок 9 — вывод процессов через Get-Process</p>
+                <p class="caption">Рисунок 9 — команда <code>Get-Process</code> выводит список процессов с указанием дескрипторов, памяти, CPU и идентификатора. Такой формат удобен для анализа производительности.</p>
             </div>
         </div>
 
