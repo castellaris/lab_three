@@ -10,85 +10,73 @@
     <header>
         <h1>Интерактивный гайд по командной строке Windows</h1>
         <p>(CMD и PowerShell)</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#operations">Гайд по операциям</a></li>
+                <li><a href="#practice">Практические задания</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
-        <div class="category">
+        <div id="operations" class="category">
             <h2>📂 Работа с файлами и папками</h2>
-            <div class="example">
-                <div class="image-block">
-                    <img src="dir_example.png" alt="Вывод команды dir в CMD" class="screenshot">
-                    <p class="title">Рисунок 1 — команда dir</p>
-                    <p class="caption">Команда <code>dir</code> выводит список файлов и папок в текущем каталоге. В таблице отображаются дата изменения, атрибуты и размер файлов.</p>
-                </div>
-                <div class="image-block">
-                    <img src="getchilditem_example.png" alt="Вывод команды Get-ChildItem в PowerShell" class="screenshot">
-                    <p class="title">Рисунок 2 — команда Get-ChildItem</p>
-                    <p class="caption">Команда <code>Get-ChildItem</code> в PowerShell показывает содержимое каталога в структурированном виде: режим доступа, дата изменения, размер и имя.</p>
-                </div>
+            <div class="image-block">
+                <img src="dir_example.png" alt="Вывод команды dir в CMD" class="screenshot">
+                <p class="title">Рисунок 1 — команда dir</p>
+                <p class="caption">Команда <code>dir</code> выводит список файлов и папок в текущем каталоге.</p>
             </div>
-
-            <div class="example">
-                <div class="image-block">
-                    <img src="cd_example.png" alt="Пример перехода в каталог через cd" class="screenshot">
-                    <p class="title">Рисунок 3 — команда cd</p>
-                    <p class="caption">Команда <code>cd</code> изменила рабочую директорию на <code>C:\Users\Student\Pictures\Screenshots</code>.</p>
-                </div>
-                <div class="image-block">
-                    <img src="setlocation_example.png" alt="Пример перехода в каталог через Set-Location" class="screenshot">
-                    <p class="title">Рисунок 4 — команда Set-Location</p>
-                    <p class="caption">Команда <code>Set-Location</code> в PowerShell выполняет аналогичный переход и обновляет приглашение оболочки.</p>
-                </div>
+            <div class="image-block">
+                <img src="getchilditem_example.png" alt="Вывод команды Get-ChildItem в PowerShell" class="screenshot">
+                <p class="title">Рисунок 2 — команда Get-ChildItem</p>
+                <p class="caption">Команда <code>Get-ChildItem</code> в PowerShell показывает содержимое каталога в структурированном виде.</p>
+            </div>
+            <div class="image-block">
+                <img src="cd_example.png" alt="Пример перехода в каталог через cd" class="screenshot">
+                <p class="title">Рисунок 3 — команда cd</p>
+                <p class="caption">Команда <code>cd</code> изменила рабочую директорию.</p>
+            </div>
+            <div class="image-block">
+                <img src="setlocation_example.png" alt="Пример перехода в каталог через Set-Location" class="screenshot">
+                <p class="title">Рисунок 4 — команда Set-Location</p>
+                <p class="caption">Команда <code>Set-Location</code> выполняет аналогичный переход в PowerShell.</p>
             </div>
         </div>
 
         <div class="category">
             <h2>👥 Управление пользователями</h2>
-            <div class="example">
-                <div class="image-block">
-                    <img src="netuser_example.png" alt="Пример добавления пользователя через net user" class="screenshot">
-                    <p class="title">Рисунок 5 — команда net user</p>
-                    <p class="caption">Команда <code>net user</code> создаёт нового пользователя с заданным именем и паролем.</p>
-                </div>
+            <div class="image-block">
+                <img src="netuser_example.png" alt="Пример добавления пользователя через net user" class="screenshot">
+                <p class="title">Рисунок 5 — команда net user</p>
+                <p class="caption">Команда <code>net user</code> создаёт нового пользователя.</p>
             </div>
-
-            <div class="example">
-                <div class="image-block">
-                    <img src="getlocaluser_example.png" alt="Вывод списка пользователей через Get-LocalUser" class="screenshot">
-                    <p class="title">Рисунок 6 — команда Get-LocalUser</p>
-                    <p class="caption">Команда <code>Get-LocalUser</code> выводит список локальных пользователей, их статус и описание.</p>
-                </div>
+            <div class="image-block">
+                <img src="getlocaluser_example.png" alt="Вывод списка пользователей через Get-LocalUser" class="screenshot">
+                <p class="title">Рисунок 6 — команда Get-LocalUser</p>
+                <p class="caption">Команда <code>Get-LocalUser</code> выводит список локальных пользователей.</p>
             </div>
         </div>
 
         <div class="category">
             <h2>⚙️ Мониторинг процессов и системы</h2>
-            <div class="example">
-                <div class="image-block">
-                    <img src="tasklist_example.png" alt="Вывод списка процессов через tasklist" class="screenshot">
-                    <p class="title">Рисунок 7 — команда tasklist</p>
-                    <p class="caption">Команда <code>tasklist</code> показывает список всех запущенных процессов: имя, PID, сессия и объём памяти.</p>
-                </div>
+            <div class="image-block">
+                <img src="tasklist_example.png" alt="Вывод списка процессов через tasklist" class="screenshot">
+                <p class="title">Рисунок 7 — команда tasklist</p>
+                <p class="caption">Команда <code>tasklist</code> показывает список всех запущенных процессов.</p>
             </div>
-
-            <div class="example">
-                <div class="image-block">
-                    <img src="taskkill_example.png" alt="Пример завершения процесса через taskkill" class="screenshot">
-                    <p class="title">Рисунок 8 — команда taskkill</p>
-                    <p class="caption">Команда <code>taskkill</code> завершает процесс по его PID. В выводе подтверждается успешное завершение.</p>
-                </div>
+            <div class="image-block">
+                <img src="taskkill_example.png" alt="Пример завершения процесса через taskkill" class="screenshot">
+                <p class="title">Рисунок 8 — команда taskkill</p>
+                <p class="caption">Команда <code>taskkill</code> завершает процесс по его PID.</p>
             </div>
-
-            <div class="example">
-                <div class="image-block">
-                    <img src="getprocess_example.png" alt="Вывод процессов через Get-Process" class="screenshot">
-                    <p class="title">Рисунок 9 — команда Get-Process</p>
-                    <p class="caption">Команда <code>Get-Process</code> выводит список процессов с указанием дескрипторов, памяти, CPU и идентификатора.</p>
-                </div>
+            <div class="image-block">
+                <img src="getprocess_example.png" alt="Вывод процессов через Get-Process" class="screenshot">
+                <p class="title">Рисунок 9 — команда Get-Process</p>
+                <p class="caption">Команда <code>Get-Process</code> выводит список процессов с указанием дескрипторов, памяти и CPU.</p>
             </div>
         </div>
 
-        <div class="category">
+        <div id="practice" class="category">
             <h2>📝 Практические задания</h2>
             <div class="task">1. Создайте папку <code>Practice</code> на диске C. Скопируйте туда текстовый файл и удалите его через командную строку.</div>
             <div class="task">2. Создайте пользователя <code>TestUser</code>, проверьте список пользователей и удалите его.</div>
