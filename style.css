@@ -1,6 +1,45 @@
-  body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1, h2, h3 { color: #2c3e50; }
-        code { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
-        .category { margin-bottom: 30px; }
-        .task { background: #ecf0f1; padding: 10px; border-left: 4px solid #3498db; margin: 10px 0; }
-        .example { background: #f9f9f9; padding: 8px; border: 1px solid #ddd; margin: 5px 0; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #2c3e50;
+}
+
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.example, .task {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.example:hover, .task:hover
