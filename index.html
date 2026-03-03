@@ -1,26 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Гайд по командной строке Windows</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Интерактивный гайд по командной строке Windows (CMD и PowerShell)</h1>
+    <p>Этот гайд поможет освоить базовые команды для работы с файлами, пользователями и процессами.</p>
 
-    <h1>Привет, студенты!</h1>
+    <div class="category">
+        <h2>📂 Работа с файлами и папками</h2>
+        <h3>Основные команды</h3>
+        <div class="example"><b>dir</b> (CMD) / <b>Get-ChildItem</b> (PowerShell)<br>
+        Показывает список файлов и папок.<br>
+        <code>dir</code><br>
+        <code>Get-ChildItem</code></div>
 
-    <p class="intro">
-        Этот текст демонстрирует, как html подключает css. Цвет текста и фон задаются во внешнем файле style.css
-    </p>
-    
-    <div class="card">
-        <h2>Блок с рамкой</h2>
-        <p>
-            С помощью CSS мы можем управлять размерами, отступами, цветом фона и шрифтом.
-        </p>
+        <div class="example"><b>cd</b> (CMD) / <b>Set-Location</b> (PowerShell)<br>
+        Переход в другой каталог.<br>
+        <code>cd C:\Users</code><br>
+        <code>Set-Location C:\Users</code></div>
 
+        <div class="example"><b>copy</b> (CMD) / <b>Copy-Item</b> (PowerShell)<br>
+        Копирование файлов.<br>
+        <code>copy file.txt D:\Backup\</code><br>
+        <code>Copy-Item file.txt -Destination D:\Backup\</code></div>
+
+        <div class="example"><b>del</b> (CMD) / <b>Remove-Item</b> (PowerShell)<br>
+        Удаление файлов.<br>
+        <code>del old.txt</code><br>
+        <code>Remove-Item old.txt</code></div>
     </div>
-    
+
+    <div class="category">
+        <h2>👥 Управление пользователями</h2>
+        <h3>Основные команды</h3>
+        <div class="example"><b>net user</b> (CMD)<br>
+        Управление учетными записями.<br>
+        <code>net user Student123 MyPassword /add</code></div>
+
+        <div class="example"><b>Get-LocalUser</b> (PowerShell)<br>
+        Просмотр локальных пользователей.<br>
+        <code>Get-LocalUser</code></div>
+
+        <div class="example"><b>Remove-LocalUser</b> (PowerShell)<br>
+        Удаление пользователя.<br>
+        <code>Remove-LocalUser -Name Student123</code></div>
+    </div>
+
+    <div class="category">
+        <h2>⚙️ Мониторинг процессов и системы</h2>
+        <h3>Основные команды</h3>
+        <div class="example"><b>tasklist</b> (CMD)<br>
+        Список запущенных процессов.<br>
+        <code>tasklist</code></div>
+
+        <div class="example"><b>taskkill</b> (CMD)<br>
+        Завершение процесса.<br>
+        <code>taskkill /IM notepad.exe /F</code></div>
+
+        <div class="example"><b>Get-Process</b> (PowerShell)<br>
+        Просмотр процессов.<br>
+        <code>Get-Process</code></div>
+
+        <div class="example"><b>Stop-Process</b> (PowerShell)<br>
+        Завершение процесса.<br>
+        <code>Stop-Process -Name notepad</code></div>
+    </div>
+
+    <div class="category">
+        <h2>📝 Практические задания</h2>
+        <div class="task">1. Создайте папку <code>Practice</code> на диске C. Скопируйте туда текстовый файл и удалите его через командную строку.</div>
+        <div class="task">2. Создайте пользователя <code>TestUser</code>, проверьте список пользователей и удалите его.</div>
+        <div class="task">3. Запустите <code>notepad</code>, найдите процесс и завершите его через команду.</div>
+    </div>
+
+    <footer>
+        <p><i>Формат реализации: PDF, HTML или сайт. Данный пример — HTML-версия.</i></p>
+    </footer>
 </body>
 </html>
