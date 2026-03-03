@@ -63,12 +63,14 @@ code {
 }
 
 .caption {
-    font-size: 0.9em;
-    color: #7f8c8d;
+    font-size: 0.95em;
+    color: #34495e;
     margin-top: -5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-style: italic;
+    margin-bottom: 15px;
+    text-align: left;
+    background: #ecf0f1;
+    padding: 8px;
+    border-radius: 6px;
 }
 
 footer {
