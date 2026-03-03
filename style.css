@@ -46,7 +46,7 @@ nav {
 }
 
 .menu a {
-    background: #2ecc71;
+    background: #2980b9; /* насыщенный синий */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -56,7 +56,7 @@ nav {
 }
 
 .menu a:hover {
-    background: #27ae60;
+    background: #1f6391; /* потемнее при наведении */
     color: #f1c40f;
 }
 
@@ -86,4 +86,36 @@ h2 {
 
 .task:hover {
     transform: scale(1.02);
+}
+
+.image-block {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.screenshot {
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 10px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.caption {
+    font-size: 0.95em;
+    color: #34495e;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+    background: #ecf0f1;
+    padding: 8px;
+    border-radius: 6px;
 }
