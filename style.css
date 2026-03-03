@@ -46,13 +46,17 @@ nav {
 }
 
 .menu a {
+    background: #2ecc71;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .menu a:hover {
+    background: #27ae60;
     color: #f1c40f;
 }
 
@@ -71,7 +75,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-.example, .task {
+.task {
     background: white;
     border-radius: 8px;
     padding: 15px;
@@ -80,16 +84,8 @@ h2 {
     transition: transform 0.2s;
 }
 
-.example:hover, .task:hover {
+.task:hover {
     transform: scale(1.02);
-}
-
-code {
-    background: #ecf0f1;
-    padding: 4px 6px;
-    border-radius: 4px;
-    display: inline-block;
-    margin: 4px 0;
 }
 
 .image-block {
@@ -117,9 +113,4 @@ code {
     font-size: 0.95em;
     color: #34495e;
     margin-top: 5px;
-    margin-bottom: 15px;
-    text-align: left;
-    background: #ecf0f1;
-    padding: 8px;
-    border-radius: 6px;
-}
+    margin
